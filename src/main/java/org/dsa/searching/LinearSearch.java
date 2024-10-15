@@ -57,5 +57,5 @@ public class LinearSearch {
         int result[] = LinearSearch.find(multiArr,17);
         System.out.println(Arrays.toString(result));
     }
-    
+
 }
