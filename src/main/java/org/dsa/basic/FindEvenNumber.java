@@ -1,6 +1,6 @@
 package org.dsa.basic;
 
-public class FindEven {
+public class FindEvenNumber {
 
     public static void validate(int arr[]){
         int count=0;
@@ -20,7 +20,7 @@ public class FindEven {
     public static void main(String[] args) {
         int arr[] = {10,13,11,10,9,17,21};
         int arr2[] = {2,4,6,8,10};
-        FindEven.validate(arr);
-        FindEven.validate(arr2);
+        FindEvenNumber.validate(arr);
+        FindEvenNumber.validate(arr2);
     }
 }
