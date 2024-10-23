@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ea5842-3084-4d21-b941-1bc1ac80b25c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dsa/string/ReverseWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dsa/string/CountVowels.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,13 +42,13 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Gowtham/repository/dsa&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ReverseWord">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.dsa.searching.BinarySearch" />
+  <component name="RunManager" selected="Application.CountVowels">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.dsa.sorting.BubbleSort" />
       <module name="dsa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.dsa.searching.*" />
+          <option name="PATTERN" value="org.dsa.sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -56,12 +56,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.dsa.sorting.BubbleSort" />
+    <configuration name="CountVowels" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.dsa.string.CountVowels" />
       <module name="dsa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.dsa.sorting.*" />
+          <option name="PATTERN" value="org.dsa.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountVowels" />
         <item itemvalue="Application.ReverseWord" />
         <item itemvalue="Application.FindEvenNumber" />
         <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.BinarySearch" />
       </list>
     </recent_temporary>
   </component>
