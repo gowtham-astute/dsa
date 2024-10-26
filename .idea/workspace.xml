@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ea5842-3084-4d21-b941-1bc1ac80b25c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dsa/basic/PrimeNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dsa/basic/GCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dsa/basic/PowerOf2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dsa/basic/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dsa/basic/PrimeNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +44,9 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Gowtham/repository/dsa&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PrimeNumber">
-    <configuration name="CountNoOfDigits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.dsa.basic.CountNoOfDigits" />
+  <component name="RunManager" selected="Application.PowerOf2">
+    <configuration name="GCD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.dsa.basic.GCD" />
       <module name="dsa" />
       <extension name="coverage">
         <pattern>
@@ -56,8 +58,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FizzBuzz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.dsa.basic.FizzBuzz" />
+    <configuration name="PowerOf2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.dsa.basic.PowerOf2" />
       <module name="dsa" />
       <extension name="coverage">
         <pattern>
@@ -110,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PowerOf2" />
+        <item itemvalue="Application.GCD" />
         <item itemvalue="Application.PrimeNumber" />
         <item itemvalue="Application.SumOfDigits" />
         <item itemvalue="Application.SumOfDigitsUptoN" />
-        <item itemvalue="Application.CountNoOfDigits" />
-        <item itemvalue="Application.FizzBuzz" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +197,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/dsa/sorting/SelectionSort.java</url>
           <line>7</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dsa/basic/PowerOf2.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dsa/basic/PowerOf2.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
