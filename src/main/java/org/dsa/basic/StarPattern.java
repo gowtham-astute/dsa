@@ -37,10 +37,8 @@ public class StarPattern {
     }
 
     public static void diamondPattern(int n){
-        int sp=n-1;
         for(int i=0;i<n;i++){
-            sp--;
-            for (int j=sp;j>0;j--){
+            for (int j=1;j<=n-i;j++){
                 System.out.print(" ");
             }
             for (int k=0;k<(i*2)+1;k++){
@@ -48,23 +46,22 @@ public class StarPattern {
             }
             System.out.println();
         }
-
         for (int i=n-1;i>0;i--){
-            for (int j=0;j<i-3;j++){
-                System.out.println(" ");
+            for (int j=1;j<=(n-i)+1;j++){
+                System.out.print(" ");
             }
             for (int k=0;k<(i*2)-1;k++){
-                System.out.println("*");
+                System.out.print("*");
             }
+            System.out.println();
         }
-
-
     }
 
     public static void main(String[] args) {
-        //StarPattern.squareStarPattern(5);
-        //StarPattern.rhombusStarPattern(5);
-       // StarPattern.rhombusStarPattern1(5);
+        StarPattern.squareStarPattern(5);
+        StarPattern.rhombusStarPattern(5);
+        StarPattern.rhombusStarPattern1(5);
         StarPattern.diamondPattern(5);
+        StarPattern.diamondPattern(10);
     }
 }
