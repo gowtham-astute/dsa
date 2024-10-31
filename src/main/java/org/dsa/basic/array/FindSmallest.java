@@ -31,13 +31,10 @@ public class FindSmallest {
             if(arr[i]<smallest){
                 secondSmallest=smallest;
                 smallest=arr[i];
+            } else if (arr[i]<secondSmallest && arr[i]!=smallest) {
+                secondSmallest=arr[i];
             }
         }
-            for (int i=0;i<arr.length;i++){
-                if(arr[i]<secondSmallest && arr[i]!=smallest){
-                    secondSmallest=arr[i];
-                }
-            }
         if(smallest==Integer.MAX_VALUE || secondSmallest==Integer.MAX_VALUE)
             return new int[] {-1,-1};
         else
