@@ -11,14 +11,29 @@ public class SpiralOrder {
                 {16,27,26,25,24,9},
                 {15,14,13,12,11,10}};
 
-        int top=0, bottom=arr.length-1, left=0, right=arr[0][arr.length-1];
+        int arr1[][] = {
+                {1,2,3,4}
+        };
+        int top=0, bottom=arr.length-1, left=0, right=arr[0].length-1;
         while(top<=bottom && left<=right) {
             for (int col = left; col < right; col++) {
                 System.out.print(arr[top][col] + " ");
             }
+
+            if(top == bottom) { // 1 row only
+                System.out.print(arr[top][right] + " ");
+                break;
+            }
+
             for (int row = top; row < bottom; row++) {
                 System.out.print(arr[row][right] + " ");
             }
+
+            if(left == right) {
+                System.out.print(arr[bottom][right] + " ");
+                break;
+            }
+
             for (int col = right; col > left; col--) {
                 System.out.print(arr[bottom][col] + " ");
             }
