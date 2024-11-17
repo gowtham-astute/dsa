@@ -15,7 +15,7 @@ public class InversionCount {
         }
         return inversionCount;
     }
-    
+
 
     public static void main(String[] args) {
         int arr[] = {2, 4, 1, 3, 5};
