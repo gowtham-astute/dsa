@@ -12,9 +12,13 @@ public class PrintPattern {
 
     public List<Integer> pattern(int N){
         List<Integer> al = new ArrayList<>();
+        int original=N;
 
-        al = negativePattern(N,  al);
-        al = positivePattern(N+5,  al);
+        al = negativePattern(N, al);
+        int current = al.get(al.size() - 1);
+        al = positivePattern(current,  original, al);
+
+        return al;
     }
 
     private List<Integer> negativePattern(int N, List<Integer> al){
@@ -22,13 +26,19 @@ public class PrintPattern {
         if(N<=0){
             return al;
         }
-        return negativePattern(N-5,al);
+        return negativePattern(N-5, al);
     }
 
-    private List<Integer> positivePattern(int N, List<Integer> al){
-        al.add(N);
-        if(N==0){
+    private List<Integer> positivePattern(int N, int original, List<Integer> al){
+        if(N>=original){
             return al;
         }
+        al.add(N+5);
+        return positivePattern(N+5,original, al);
+    }
+
+    public static void main(String[] args) {
+        PrintPattern pp = new PrintPattern();
+        System.out.println(pp.pattern(15));
     }
 }
