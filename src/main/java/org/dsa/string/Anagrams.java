@@ -6,25 +6,33 @@ public class Anagrams {
 
     public static boolean areAnagrams(String s1, String s2) {
 
-        HashMap<String,Integer> hm = new HashMap<>();
+        HashMap<Character,Integer> hm = new HashMap<>();
 
-        if(!hm.containsKey(s1)){
-            hm.put(s1,1);
-        }else {
-            hm.put(s1,hm.get(s1)+1);
+        for (char ch : s1.toLowerCase().toCharArray()){
+            if(!hm.containsKey(ch)){
+                hm.put(ch,1);
+            }else {
+                hm.put(ch,hm.get(ch)+1);
+            }
         }
 
-        if(!hm.containsKey(s2)){
-            hm.put(s1,1);
-        }else {
-            hm.put(s1,hm.get(s1)-1);
+        for (char ch : s2.toLowerCase().toCharArray()){
+            if(!hm.containsKey(ch)){
+                hm.put(ch,1);
+            }else {
+                hm.put(ch,hm.get(ch)-1);
+            }
         }
 
         for(var pair: hm.entrySet()){
             if(pair.getValue()!=0)
                 return false;
         }
-
         return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Anagrams.areAnagrams("geeks","kseeg"));
+
     }
 }
