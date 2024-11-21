@@ -13,13 +13,14 @@ public class MostFrequentCharacter {
         int maxFreq=0;
         for (int i=0; i<256; i++){
             int value = freq[i];
-            if(value>=maxFreq){
+            if(value>maxFreq){
                 if(value==maxFreq){
-                    int i1 = value < maxFreq ? value : maxFreq;
-                    maxChar= (char)i1;
-                    continue;
+                    maxChar = maxChar < (char)i ? maxChar : (char)i;
                 }
-               maxChar= (char)i;
+                else {
+                    maxChar = (char) i;
+                    maxFreq = value;
+                }
             }
         }
         return maxChar;
