@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ea5842-3084-4d21-b941-1bc1ac80b25c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dsa/basic/array/MissingNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dsa/basic/array/Sort0s_1sand2s.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Gowtham/repository/dsa&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MissingNumber">
+  <component name="RunManager" selected="Application.Sort0s_1sand2s">
     <configuration name="Anagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.dsa.string.Anagrams" />
       <module name="dsa" />
@@ -83,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.dsa.basic.numbers.PrintPattern" />
+    <configuration name="Sort0s_1sand2s" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.dsa.basic.array.Sort0s_1sand2s" />
       <module name="dsa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.dsa.basic.numbers.*" />
+          <option name="PATTERN" value="org.dsa.basic.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Sort0s_1sand2s" />
         <item itemvalue="Application.MissingNumber" />
         <item itemvalue="Application.MostFrequentCharacter" />
         <item itemvalue="Application.SumOfRowAndColumn" />
         <item itemvalue="Application.Anagrams" />
-        <item itemvalue="Application.PrintPattern" />
       </list>
     </recent_temporary>
   </component>
