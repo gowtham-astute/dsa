@@ -29,7 +29,7 @@ public class EarliestRepeatingCharacter {
     }
 
     public static void main(String[] args) {
-        String str="g";
+        String str="geeksforgeeks";
         System.out.println(EarliestRepeatingCharacter.firstRepChar(str));
     }
 }
