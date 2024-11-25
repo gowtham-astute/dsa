@@ -23,8 +23,13 @@ public class EarliestRepeatingCharacter {
                 if(value==1){
                     return  String.valueOf(s.charAt(i));
                 }
-                //hm.put(s.charAt(i),hm.get(s.charAt(i)));
             }
         }
+        return new String("");
+    }
+
+    public static void main(String[] args) {
+        String str="g";
+        System.out.println(EarliestRepeatingCharacter.firstRepChar(str));
     }
 }
