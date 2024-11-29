@@ -1,5 +1,7 @@
 package org.dsa.basic.array;
 
+import java.util.Arrays;
+
 /**
  * You are given an array arr of size n - 1 that contains distinct integers in the range from 1 to n
  * (inclusive). This array represents a permutation of the integers from 1 to n with one element missing.
@@ -16,8 +18,32 @@ public class MissingNumber {
         return originalSum-sum;
     }
 
+    //Find missing and repeated element
+    public static void missingAndRepeated(int arr[]) {
+
+        boolean visited[] = new boolean[arr.length+1];
+        int repeated = -1; int missing = -1;
+        Arrays.fill(visited,false);
+        for(int i=0; i< arr.length; i++){
+            if(visited[arr[i]]){
+                repeated = arr[i];
+            }
+            else{
+                visited[arr[i]] = true;
+            }
+        }
+        for(int i=1;i<= arr.length;i++){
+            if(!visited[i]){
+                missing = i;
+                break;
+            }
+        }
+        System.out.println("Missing number is "+missing);
+        System.out.println("Repeated number is "+repeated);
+    }
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 5};
+        int arr[] = {1, 1,2};
         System.out.println(MissingNumber.missingNumber(arr));
+        MissingNumber.missingAndRepeated(arr);
     }
 }
