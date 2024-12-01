@@ -35,7 +35,8 @@ public class MinimumSwaps {
     public static void main(String[] args) {
         int  arr[] = {10, 19, 6, 3, 5};
         int arr1[] = {2, 8, 5, 4};
-        System.out.println(MinimumSwaps.minSwaps(arr1));
+        int arr2[] = {32524, 30965, 30657, 18612, 29956, 15628, 16059, 10826, 23546, 22340};
+        System.out.println(MinimumSwaps.minSwaps(arr2));
     }
 
 }
