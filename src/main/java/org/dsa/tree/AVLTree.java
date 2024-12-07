@@ -37,7 +37,7 @@ public class AVLTree {
             node.left = insert(node.left, data);
         } else if (data > node.key) {
             node.right = insert(node.right, data);
-        }else{
+        } else {
             return node;
         }
 
@@ -47,18 +47,18 @@ public class AVLTree {
 
         //LL case
         if (balanceFactor > 1 && data < node.left.key) {
-           return rightRotate(node);
+            return rightRotate(node);
         }
 
         //LR case
         if (balanceFactor > 1 && data > node.left.key) {
             node.left = leftRotate(node.left);
-           return rightRotate(node);
+            return rightRotate(node);
         }
 
         //RR case
         if (balanceFactor < -1 && data > node.right.key) {
-           return leftRotate(node);
+            return leftRotate(node);
         }
 
         //RL case
@@ -102,19 +102,18 @@ public class AVLTree {
     }
 
     private int getHeight(Node node) {
-        if(node == null){
+        if (node == null) {
             return -1;
         }
         return node.height;
     }
 
-    public void inOrderTraversal(){
+    public void inOrderTraversal() {
         inOrderTraversal(root);
     }
 
-    private void inOrderTraversal(Node node){
-        if(node==null)
-            return;
+    private void inOrderTraversal(Node node) {
+        if (node == null) return;
         inOrderTraversal(node.left);
         System.out.println(node.key);
         inOrderTraversal(node.right);
