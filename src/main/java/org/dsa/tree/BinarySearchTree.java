@@ -49,8 +49,7 @@ public class BinarySearchTree {
     }
 
     private void inOrderTraversal(Node node) {
-        if (node == null)
-            return;
+        if (node == null) return;
         inOrderTraversal(node.left);
         System.out.println(node.data);
         inOrderTraversal(node.right);
