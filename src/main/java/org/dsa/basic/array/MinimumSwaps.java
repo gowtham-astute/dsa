@@ -11,29 +11,30 @@ package org.dsa.basic.array;
 public class MinimumSwaps {
 
     public static int minSwaps(int arr[]) {
-        int count=0;
-        for (int i=0; i<arr.length; i++){
-            int minIndex=i; int maxIndex=i;
-            for (int j=i; j<arr.length; j++){
-                if(arr[j]<arr[minIndex]){
-                    minIndex=j;
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            int minIndex = i;
+            int maxIndex = i;
+            for (int j = i; j < arr.length; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
                 }
-                if(arr[j]>arr[maxIndex]){
-                    maxIndex=j;
+                if (arr[j] > arr[maxIndex]) {
+                    maxIndex = j;
                 }
             }
-            if(minIndex>maxIndex){
+            if (minIndex > maxIndex) {
                 count++;
-                int temp=arr[minIndex];
-                arr[minIndex]=arr[maxIndex];
-                arr[maxIndex]=temp;
+                int temp = arr[minIndex];
+                arr[minIndex] = arr[maxIndex];
+                arr[maxIndex] = temp;
             }
         }
         return count;
     }
 
     public static void main(String[] args) {
-        int  arr[] = {10, 19, 6, 3, 5};
+        int arr[] = {10, 19, 6, 3, 5};
         int arr1[] = {2, 8, 5, 4};
         int arr2[] = {32524, 30965, 30657, 18612, 29956, 15628, 16059, 10826, 23546, 22340};
         System.out.println(MinimumSwaps.minSwaps(arr2));
